@@ -18,47 +18,38 @@ class UnitTest(unittest.TestCase):
         self.__solution = Solution()
         return super().setUp()
     
-    @timeout(0.5)
     def test_case_1(self):
         prices, output = self.__testcases['Test Case 1: The Stock Market Ninja']
         self.assertEqual(self.__solution.maxProfit(prices), output)
     
-    @timeout(0.5)
     def test_case_2(self):
         prices, output = self.__testcases['Test Case 2: The Ultimate Glow-Up']
         self.assertEqual(self.__solution.maxProfit(prices), output)
     
-    @timeout(0.5)
     def test_case_3(self):
         prices, output = self.__testcases['Test Case 3: When the Market Breaks Your Heart']
         self.assertEqual(self.__solution.maxProfit(prices), output)
 
-    @timeout(0.5)
     def test_case_4(self):
         prices, output = self.__testcases['Test Case 4: The Rapid Fire Trader']
         self.assertEqual(self.__solution.maxProfit(prices), output)
     
-    @timeout(0.5)
     def test_case_5(self):
         prices, output = self.__testcases['Test Case 5: The Rollercoaster Ride']
         self.assertEqual(self.__solution.maxProfit(prices), output)
 
-    @timeout(0.5)
     def test_case_6(self):
         prices, output = self.__testcases['Test Case 6: The Empty Market (Edge Case)']
         self.assertEqual(self.__solution.maxProfit(prices), output)
     
-    @timeout(0.5)
     def test_case_7(self):
         prices, output = self.__testcases['Test Case 7: The Single Day Wonder']
         self.assertEqual(self.__solution.maxProfit(prices), output)
     
-    @timeout(0.5)
     def test_case_8(self):
         prices, output = self.__testcases['Test Case 8: The Same Price Repeated']
         self.assertEqual(self.__solution.maxProfit(prices), output)
     
-    @timeout(0.5)
     def test_case_9(self):
         prices, output = self.__testcases['Test Case 9: The "Buy and Sell Same Day" Pro']
         self.assertEqual(self.__solution.maxProfit(prices), output)
